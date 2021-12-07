@@ -1,0 +1,8 @@
+07.12.2021:
+In the actual firmware following Steps/mm are set:  M92 X80.00 Y80.00 Z1600.00 E102.07
+A calibration test showed, that instead of 100mm a distance of 110.86mm got extruded.
+Due to overextrusion the steps/mm for E should be set to 92.071mm.
+
+Since the latest firmware is not present yet and therefore a new firmware update will cause quite some work adding following line to start g-code is proposed:
+
+  M92E92.071
